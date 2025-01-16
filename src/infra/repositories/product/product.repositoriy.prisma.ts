@@ -9,9 +9,6 @@ export class ProductRepositoryPrisma implements productGateway {
         return new ProductRepositoryPrisma(prismaClient);
     }
 
-    
-    
-    
     public async save(product: Product): Promise<void> {
         const data = {
             id:product.id,
